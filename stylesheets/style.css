@@ -238,13 +238,6 @@ header .main_nav li i{
     }
 }
 
-.menu.active:hover span:nth-child(3){
-    transform: translate(-50%, -50%) rotate(-35deg);
-}
-
-.menu.active:hover span:nth-child(1){
-    transform: translate(-50%, -50%) rotate(35deg);
-}
 
 /* Off Screen Menu */
 .offScreenMenu{
@@ -254,8 +247,8 @@ header .main_nav li i{
     z-index: 20;
     max-width: 450px;
     position: fixed;
-    top: -100%;
-    right: 0;
+    top: 0;
+    right: -450px;
     display: flex;
     flex-direction: column;
     overflow-y: hidden;
@@ -275,7 +268,7 @@ header .main_nav li i{
 }
 
 .offScreenMenu.active{
-    top: 0;
+    right: 0;
 }
 
 .offScreenMenu{
