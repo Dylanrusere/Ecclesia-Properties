@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecclesia Properties</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="image/png" href="./assets/images/title_logo.png" />
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+    <!-- Pre-Loader -->
+    <div class="preloader"></div>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo"><a href=""><img class="logo_img" src="./assets/images/logo.png" alt="Our Logo"></a></div>
+            <ul class="main_nav">
+                <li><a href="#" class="active_nav">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Invest</a></li>
+                <li><a href="#">Contact</a></li>
+                <li>
+                    <a href="https://www.instagram.com/ecclesiaproperties_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+            <!-- Off Screen Menu -->
+             <div class="offScreenMenu">
+                <ul>
+                    <li><a href="./ecclesiaproperties.html" class="active_nav">Home</a></li>
+                    &nbsp;
+                    <li><a href="#">Services</a></li>
+                    &nbsp;
+                    <li><a href="#">Invest</a></li>
+                    &nbsp;
+                    <li><a href="#">Contact</a></li>
+                    &nbsp;
+                    <li class="profile_links">
+                        <a href="https://www.instagram.com/ecclesiaproperties_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                </ul>
+             </div>
+            <!-- Ham Menu Icon-->
+            <div class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="hero_section">
+        <div class="hero">
+            <div class="hero_container">
+                <div class="hero-item active_hero" style="background-image: url('./assets/images/outside_top_view.webp');">
+                    <div class="overlay_home">
+                        <div class="home_content">
+                            <h2 data-aos="slide-down" data-aos-duration="2000">One Place All Property</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-item" style="background-image: url('./assets/images/inside_dark.jpeg');">
+                    <div class="overlay_home">
+                        <div class="home_content">
+                            <h2 data-aos="slide-down" data-aos-duration="2000">High-performing property investment deals</h2>
+                            <a href=""><button class="home_btn" data-aos="slide-up" data-aos-duration="2000">Get In Touch </button></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-controls">
+                  <button class="active_hero"></button>
+                  <button></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+     <section id="about">
+        <div class="overall_container">
+            <div class="about_head head" data-aos="slide-up" data-aos-duration="2000">
+                <p>About Ecclesia Properties</p>
+            </div>
+            <!-- Content -->
+             <div class="content_container">
+                <div class="video">
+                    <figure class="img-play-video">
+                        <a id="play-video" class="video-play-button" href="https://www.youtube.com/embed/5s8fs_j2xlY" data-fancybox>
+                          <span></span>
+                        </a>
+                        <div class="image_bg"><img src="./assets/images/hero_bg.webp" alt="Image" class="img-fluid rounded-20"></div>
+                    </figure>
+                </div>
+                <div class="content_par">
+                    <p class="content_head">Ecclesia Properties</p>
+                    <p class="content_about">Founded in 2023, specializes in acquiring and disposing of property, 
+                        land, and developments across the United Kingdom. We are dedicated to sourcing high-performing 
+                            investment deals in all areas, ensuring our clients access the best opportunities in 
+                        the market with the best returns. Whether it's land acquisition, commercial properties, 
+                        or residential developments, we are commited to walking hand-in-hand with you, 
+                        providing guidance, support and insights so you can make informed decisions and 
+                        build a thriving property portfolio. Excellence at Ecclesia Properties drives 
+                        us to deliver exceptional results and maximize our clients returns.</p>
+                    <button class="buttons more_btn" onclick="readMore(this)">Read More</button>
+                </div>
+             </div>
+        </div>
+     </section>
+
+     <!-- Services -->
+      <section id="services">
+        <div class="overall_container">
+            <div class="services_head">
+                <p>What We Do</p>
+            </div>
+            <div class="services_par_container">
+                <p class="services_par">We are a company that specialises in Acquiring & disposing of property, land
+                    and Developments in the United Kingdom. <br> We source high-performing property investment deals
+                    in all areas of the United Kingdom.</p>
+                <div class="buttons_container">
+                    <a href=""><button class="buttons learn_more services_buttons" >Learn More </button></a>
+                    <a href=""><button class="buttons learn_more contact services_buttons" >Get In Touch </button></a>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <!-- Counter -->
+       <section id="counter_section">
+            <div class="overall_container">
+                <div class="counter_container">
+                    <div class="clients counter">
+                        <div id="counter_clients" class="counter_number">0</div>
+                        <p class="second">investors <br>worked with</p>
+                    </div>
+                    <div class="properties_sold_counter counter">
+                        <div id="counter_properties" class="counter_number">0</div>
+                        <p class="second">properties <br>sold</p>
+                    </div>
+                    <div class="available_properties counter">
+                        <div id="counter_available" class="counter_number">0</div>
+                        <p class="second">available <br>property deals</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+      <!-- Properties Sold -->
+       <section id="properties_sold">
+            <div class="overall_container">
+                <div class="properties_sold_container">
+                        <div class="image_slider">
+                            <div id="slider">
+                                <a href="">
+                                    <div class="slides">
+                                        <img class="image_slides" src="./assets/images/investment.jpg" width="100%" />
+                                        <div class="overlay_slider">
+                                            <p class="slider_head">Flat No. 12</p>
+                                            <p class="slider_location">Manchester, UK</p>
+                                        </div>
+                                    </div>
+                                    <div class="slides">
+                                        <img class="image_slides" src="./assets/images/download.jpeg" width="100%" />
+                                        <div class="overlay_slider">
+                                            <p class="slider_head">Bradford Estae 44</p>
+                                            <p class="slider_location">Bradford, UK</p>
+                                        </div>
+                                    </div>
+                                    <div class="slides">
+                                        <img class="image_slides" src="./assets/images/outside_sunset.png" width="100%" />
+                                        <div class="overlay_slider">
+                                            <p class="slider_head">Building No. 23</p>
+                                            <p class="slider_location">Birmingham, UK</p>
+                                        </div>
+                                    </div>
+                                    <div class="slides">
+                                          <img class="image_slides" src="./assets/images/outside.jpeg" width="100%" />
+                                          <div class="overlay_slider">
+                                            <p class="slider_head">Building No. 45</p>
+                                            <p class="slider_location">Cambridge, UK</p>
+                                        </div>
+                                    </div>
+                                </a>
+                        
+                                  <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+                            </div>
+                        </div>
+                    <div class="prop_text">
+                        <p class="properties_sold_text">Over <span>Seven</span> <br>Properties Sold</p>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       <!--  -->
+    
+       
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
