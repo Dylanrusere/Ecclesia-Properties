@@ -134,11 +134,11 @@ function changeSlide(newIndex = index) {
 
   for (let i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-    dot[i].classList.remove("active");
+    dot[i].classList.remove("active_dot");
   }
 
   slides[newIndex].style.display = "block";
-  dot[newIndex].classList.add("active");
+  dot[newIndex].classList.add("active_dot");
 
   index = newIndex;
 }
