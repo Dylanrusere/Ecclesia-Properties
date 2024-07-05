@@ -960,7 +960,6 @@ header .main_nav li i{
     background-color: #85593f;
     position: absolute;
     left: 0;
-    margin-left: 52%;
     margin-top: 45px;
 
     @media(max-width:890px){
