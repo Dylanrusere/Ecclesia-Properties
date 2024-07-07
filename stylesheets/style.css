@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'century_gothicregular';
+    scroll-behavior: smooth;
 }
 
 /* Pre-Loader */
@@ -83,6 +84,10 @@ header.sticky .menu.active span{
     background-color: #ffffff;
 }
 
+header.sticky .main_nav li a::after{
+    background-color: #85593f;
+}
+
 header .logo{
     flex: 1;
     margin-left: 5%;
@@ -121,7 +126,7 @@ header .main_nav li a::after{
     width: 0px;
     height: 2px;
     border-radius: 20px;
-    background-color: #85593f;
+    background-color: #ffffff;
     position: absolute;
     left: 0;
     margin-left: 25%;
@@ -131,6 +136,10 @@ header .main_nav li a::after{
 
 header .main_nav li .active_nav::after{
     width: 50%;
+}
+
+header .main_nav li .active_nav{
+    font-weight: 600;
 }
 
 header .main_nav li a:hover::after{
@@ -282,6 +291,25 @@ header .main_nav li i{
 }
 
 .offScreenMenu{
+    li{
+
+        a:hover{
+            color: black;
+        }
+    }
+}
+
+.offScreenMenu{
+    li{
+
+        .active_nav_ham{
+            color: black;
+            font-weight: 600;
+        }
+    }
+}
+
+.offScreenMenu{
     .profile_links{
         display: flex;
         justify-content: center;
@@ -289,34 +317,6 @@ header .main_nav li i{
             i{
                 font-size: 30px;
             }
-        }
-    }
-}
-
-.offScreenMenu{
-    li{
-        a::after{
-            content: "";
-            width: 0px;
-            height: 2px;
-            border-radius: 20px;
-            background-color: #85593f;
-            position: absolute;
-            left: 0;
-            margin-left: 35%;
-            bottom: -6px;
-            transition: 0.5s ease-in-out;
-        }
-    }
-}
-
-.offScreenMenu{
-    li{
-        a:hover::after{
-            width: 25%;
-        }
-        .active_nav::after{
-            width: 25%;
         }
     }
 }
@@ -1210,4 +1210,112 @@ hr{
     text-align: center;
     color: #ffffff;
     margin-top: 4%;
+}
+
+/* --------------------------------------- Investment------------------------------------------ */
+.investment_content{
+    position: relative;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.invst_btn{
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    padding: 6% 2%;
+    margin-top: 5%;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.invst_btn:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+.properties_listed_grid_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4%;
+    gap: 4%;
+
+    @media(max-width:750px){
+        grid-template-columns: 1fr;
+        margin-top: 10%;
+    }
+}
+
+.properties_listed{
+    width: 100%;
+
+    img{
+        width: 100%;
+        border-radius: 20px;
+
+        @media(max-width:850px){
+            border-radius: 10px;
+        }
+    }
+}
+
+.listed_head{
+    font-weight: 600;
+
+    @media(max-width:750px){
+        font-size: 25px;
+    }
+}
+
+.invst_learn_more{
+    margin-top: 4%;
+}
+
+.contact_investment{
+
+    @media(max-width:750px){
+        margin-top: 25%;
+    }
+}
+
+/* --------------------------------------Contact---------------------------------------------- */
+.contact_content{
+    position: relative;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact_btn{
+    cursor: pointer;
+    border: none;
+    width: 150px;
+    padding: 6% 2%;
+    margin-top: 2%;
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.contact_btn:hover{
+    background-color: #ffffff;
+    color: black;
+}
+
+.contact_page_head{
+    margin: 5% 0 0 5%;
 }
